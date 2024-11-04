@@ -9,8 +9,6 @@ body {
     height: 100%;
 }
 div .photo{
-    height: 50%;
-    width:50%;
     background-color: aliceblue;
     margin: 5px;
     display: flex;
@@ -30,8 +28,6 @@ div .photo{
 }
 
 .photo img {
-    width: 50%;
-    height: 50%;
     background-size: contain;
     border: 5px solid #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
