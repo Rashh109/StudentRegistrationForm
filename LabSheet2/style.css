@@ -6,12 +6,20 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+}
+div .photo{
+    height: 50%;
+    width:50%;
+    background-color: aliceblue;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
 }
 
 .gallery {
     display: flex;
-    flex-wrap: wrap;
     gap: 15px;
 }
 
@@ -22,8 +30,9 @@ body {
 }
 
 .photo img {
-    width: 100%;
-    height: auto;
+    width: 50%;
+    height: 50%;
+    background-size: contain;
     border: 5px solid #fff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
@@ -31,5 +40,5 @@ body {
 
 .photo img:hover {
     transform: scale(1.05);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 8px 16px rgba(126, 247, 180, 0.3);
 }
