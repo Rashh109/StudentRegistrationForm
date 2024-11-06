@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Student Registration Form</title>
     <link rel="stylesheet" href="style.css">
+    <script src="JSfile1.js"></script>
 </head>
 <body>
     <div class="form-container">
         <form action="/server">
             <h2>Student Registration Form</h2>
         
-            <label colspan=4; for="name">First Name</label>
+            <label for="name">First Name</label>
             <input type="text" placeholder="enter your first name" id="name" name="name" required><br>
 
-            <label colspan=4; for="name">Middle Name</label>
+            <label for="name">Middle Name</label>
             <input type="text" placeholder="enter your middle name" id="name" name="name" required><br>
 
-            <label colspan=4; for="name">Last Name:</label>
+            <label for="name">Last Name:</label>
             <input type="text" placeholder="enter your surname" id="name" name="name" required><br>
             
             <label for="gender">Gender</label>
@@ -32,20 +33,21 @@
             <input type="date" id="dob" name="dob" required><br>
 
             <label for="mobile">Mobile No.</label>
-            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}"><br>
+            <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" required><br>
 
             <label for="email">Email</label>
             <input type="email" placeholder="@domain.com" id="email" name="email" required><br>
 
             <label for="course">Course</label>
-                <select id="course" name="course">
-
+            <select id="course" name="course" required>
+                <option value="">Select</option>
                 <option value="course1">BCA</option>
                 <option value="course2">MCA</option>
                 <option value="course3">B.Tech</option>
                 <option value="course4">M.Tech</option>
                 <option value="course5">BBA</option>
-                <option value="course6">MBA</option></select><br>
+                <option value="course6">MBA</option>
+            </select><br>
 
             <label for="address">Address</label>
             <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
